@@ -1,0 +1,93 @@
+body{
+    background-color: #070707;
+    color:gold;
+}
+.head{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    /* border:1px solid white; */
+    padding:20px;
+}
+.icons{
+    display:flex;
+    padding:0px;
+    margin:20px;
+    justify-content: space-between;
+    /* border:1px solid yellow; */
+    width:100px;
+    color:white;
+    cursor:pointer;
+}
+.fa-facebook:hover{
+    color:#F2CA46;
+}
+.fa-instagram:hover{
+    color:#F2CA46;
+}
+.fa-twitter:hover{
+    color:#F2CA46;
+}
+.call-btn{
+    border:1px solid gold;
+    padding:10px;
+    height:40px;
+    background-color: transparent;
+    color:gold;
+    font-size:15px;
+    font-weight: bold;
+}
+.call-btn:hover{
+    background-color: gold;
+    color:#070707;
+    cursor:pointer;
+}
+.nav-list{
+    display:flex;
+    color:white;
+    list-style-type: none;
+    justify-content: center;
+}
+.nav-items{
+    margin:0px 20px;
+}
+.nav-items:hover{
+    color:gold;
+    cursor:pointer;
+}
+.bg-img{
+    background-image: url("https://preview.colorlib.com/theme/cakeshop/assets/img/hero/h1_hero1.jpg");
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+}
+.hero-text{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    /* border:1px solid #F2CA46; */
+    font-size:50px;
+    margin-left:80px;
+    font-family: "Poiret One", sans-serif;
+    height:auto;
+    color:white;
+}
+.order-btn{
+    border:none;
+    padding:20px;
+    height:70px;
+    width:150px;
+    font-size:13px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #F2CA46;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: "Jost", sans-serif;
+}
+.order-btn:hover{
+    background-color: transparent;
+    color:#F2CA46;
+    border:1px solid #F2CA46;
+    cursor:pointer;
+}
