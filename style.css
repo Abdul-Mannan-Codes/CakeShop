@@ -1,6 +1,7 @@
 body{
     background-color: #070707;
     color:gold;
+    font-family: "Poiret One", sans-serif;
 }
 .head{
     display:flex;
@@ -28,6 +29,9 @@ body{
 .fa-twitter:hover{
     color:#F2CA46;
 }
+a{
+    color:white;
+}
 .call-btn{
     border:1px solid gold;
     padding:10px;
@@ -42,11 +46,17 @@ body{
     color:#070707;
     cursor:pointer;
 }
+.nav{
+    position: sticky;
+    top:3px;
+    /* border:1px solid white; */
+}
 .nav-list{
     display:flex;
     color:white;
     list-style-type: none;
     justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .nav-items{
     margin:0px 20px;
@@ -61,6 +71,9 @@ body{
     height:100vh;
     display:flex;
     align-items: center;
+    margin-bottom:100px;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 .hero-text{
     display:flex;
@@ -69,7 +82,6 @@ body{
     /* border:1px solid #F2CA46; */
     font-size:50px;
     margin-left:80px;
-    font-family: "Poiret One", sans-serif;
     height:auto;
     color:white;
 }
@@ -79,9 +91,8 @@ body{
     height:70px;
     width:150px;
     font-size:13px;
-    font-family: "Montserrat", sans-serif;
     background-color: #F2CA46;
-    font-weight: bold;
+    /* font-weight: bold; */
     letter-spacing: 2px;
     font-family: "Jost", sans-serif;
 }
@@ -90,4 +101,42 @@ body{
     color:#F2CA46;
     border:1px solid #F2CA46;
     cursor:pointer;
+}
+.burger-title{
+    text-align:center;
+    width:660px;
+    font-size:50px;
+    margin:auto;
+    color:white;
+}
+.detail-grid{
+    display:grid;
+    grid-template-columns: auto auto;
+    border-top:1px solid #F2CA46;
+    color:white;
+    gap:20px;
+    margin:20px 60px;
+}
+h3{
+    font-weight:normal;
+    font-size:25px;
+    color:#F2CA46;
+}
+.grid-items{
+    /* border-top:1px solid #F2CA46;
+    border-width: 50%; */
+}
+.burger-div p{
+    font-size:16px;
+    /* font-family: "Jost", sans-serif; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    line-height:20px;
+}
+.burger-div{
+    margin:0px 70px;
+}
+.burger-cake{
+    /* border:1px solid white; */
+    padding:23px;
 }
