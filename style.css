@@ -22,13 +22,15 @@ body{
 }
 .fa-facebook:hover{
     color:#E5BF4A;
-    transform:translate(-10)
+    transform:scaleX(-1);
 }
 .fa-instagram:hover{
     color:#E5BF4A;
+    transform:scaleX(-1);
 }
 .fa-twitter:hover{
     color:#E5BF4A;
+    transform:scaleX(-1);
 }
 a{
     color:white;
@@ -131,10 +133,10 @@ a{
     font-size:25px;
     color:#E5BF4A;
 }
-.grid-items{
-    /* border-top:1px solid #E5BF4A;
-    border-width: 50%; */
-}
+/* .grid-items{
+    border-top:1px solid #E5BF4A;
+    border-width: 50%;
+} */
 .burger-div p{
     font-size:16px;
     /* font-family: "Jost", sans-serif; */
@@ -155,16 +157,23 @@ a{
 .carousel{
     display:flex;
     gap:20px;
+    position:relative;
     /* margin: 0px 50px; */
+    :hover{
+        .add-to-cart-btn{
+            visibility:visible;
+            cursor: pointer;
+        }
+    }
 }
 .cake-image{
     height:80%;
     width:90%;
     cursor:pointer;
 }
-.cake-image:hover{
+/* .cake-image:hover{
     image-resolution:300px;
-}
+} */
 .slide-btn{
     border:none;
     font-size:15px;
@@ -172,6 +181,7 @@ a{
     background-color: transparent;
     cursor:pointer;
     opacity:70%;
+    font-size:40px;
     /* background-color:blanchedalmond; */
 }
 .slide-btn:hover{
@@ -194,6 +204,21 @@ a{
 .item-3{
     margin-right:0px;
     /* background-color:bisque; */
+}
+.item-1, .item-2, .item-3{
+    position:relative;
+}
+.add-to-cart-btn{
+    position:absolute;
+    bottom:77px;
+    left:0px;
+    height:40px;
+    width:323px;
+    font-family:cursive;
+    background-color:#E5BF4A;
+    border:none;
+    font-weight:600;
+    visibility: hidden;
 }
 #iframe-section{
     height:100vh;
@@ -225,4 +250,58 @@ a{
 #play-btn:hover{
     cursor:pointer;
     background-color: #fff;
+}
+#review-section{
+    align-content: center;
+    margin-bottom:90px;
+}
+.review-heading{
+    font-size:50px;
+    color:white;
+    text-align:center;
+    /* margin:auto; */
+}
+.review-div{
+    display:flex;
+    margin:10px 100px;
+    border:1px solid white;
+    border-left:none;
+    border-right:none;
+}
+.reviews{
+    padding:40px;
+    /* border:1px solid #fff; */
+}
+.rating-stars{
+    color:#E5BF4A;
+}
+.review-para{
+    margin-top:20px;
+    color:white;
+    font-size:25px;
+    /* font-family: "jost", sans-serif; */
+    font-weight: lighter;
+    line-height: 40px;
+}
+/* .review-1{
+   border:1px solid #fff;
+} */
+.review-2{
+    border:1px solid #fff;
+}
+/* .review-3{
+    border:1px solid #fff;
+} */
+.profile{
+    display:flex;
+    color:white;
+    margin-top:20px;
+    font-size: 17px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.profile-img{
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    margin-right:10px;
 }
