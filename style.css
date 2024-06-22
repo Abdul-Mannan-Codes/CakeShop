@@ -1,6 +1,6 @@
 body{
     background-color: #070707;
-    color:gold;
+    color:#E5BF4A;
     font-family: "Poiret One", sans-serif;
 }
 .head{
@@ -20,15 +20,7 @@ body{
     color:white;
     cursor:pointer;
 }
-.fa-facebook:hover{
-    color:#E5BF4A;
-    transform:scaleX(-1);
-}
-.fa-instagram:hover{
-    color:#E5BF4A;
-    transform:scaleX(-1);
-}
-.fa-twitter:hover{
+.transform-icon:hover{
     color:#E5BF4A;
     transform:scaleX(-1);
 }
@@ -279,8 +271,7 @@ a{
     margin-top:20px;
     color:white;
     font-size:25px;
-    /* font-family: "jost", sans-serif; */
-    font-weight: lighter;
+    font-family: "jost", sans-serif;
     line-height: 40px;
 }
 /* .review-1{
@@ -304,4 +295,127 @@ a{
     height:50px;
     width:50px;
     margin-right:10px;
+}
+.blog-header{
+    display:flex;
+    justify-content:space-between;
+    margin:30px 80px;
+    align-items:center;
+}
+.big-font{
+    font-size:16px;
+    width:150px;
+    height:60px;
+}
+.blog-div{
+    display:flex;
+    gap:15px;
+    /* border:1px solid white; */
+}
+.blog-1{
+    display:flex;
+}
+.blog-1-img, .blog-2-img{
+    width:50%;
+}
+.blog-txt{
+    border:1px solid rgb(218, 218, 218);
+    padding:25px;
+}
+.blog-para{
+    font-size:24px;
+    font-weight:600;
+    /* height:180px; */
+    margin-top:0px;
+    margin-bottom:20px;
+}
+.blog-detail{
+    font-size:16px;
+    color:white;
+    font-family:"jost", sans-serif;
+    font-weight:300;
+    margin-top:0px;
+    margin-bottom:50px;
+}
+.learn-more-btn{
+    text-transform: uppercase;
+    border:none;
+    border-bottom:1px solid #E5BF4A;
+    background-color: transparent;
+    color:#E5BF4A;
+    font-family:"jost", sans-serif;
+    cursor:pointer;
+    font-size:15px;
+    margin-bottom:20px;
+}
+.learn-more-btn:hover{
+    letter-spacing: 2px;
+}
+.head-and-btn{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border:1px dotted #fff; */
+    align-items: center;
+    margin:80px;
+}
+.head-and-btn h1{
+    font-size:40px;
+    color:white;
+    font-weight:normal;
+    text-align: center;
+}
+#fllw-insta{
+    background-color: transparent;
+    color:#E5BF4A;
+    font-family:"jost", sans-serif;
+    font-size:15px;
+    padding:10px;
+    border:1px solid #E5BF4A;
+    width:150px;
+    height:50px;
+}
+#fllw-insta:hover{
+    /* background-color: #E5BF4A; */
+    color:#ffd042;
+    cursor: pointer;
+    scale:1.2;
+}
+.insta-grid{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    img{
+        width:20%;
+    }
+}
+.last-header{
+    display:flex;
+    justify-content: space-between;
+    margin:120px;
+    margin-bottom:20px;
+}
+.low-opacity-hr{
+    color:white;
+    opacity:60%;
+    width:85%;
+}
+.contact-div{
+    display:flex;
+    margin:30px 100px;
+    color:white;
+    p{
+        font-size:15px;
+        font-weight: 600;
+        margin-bottom:50px;
+    }
+}
+.smb{
+    width:100px;
+    height:40px;
+    padding:10px;
+    border:1px solid white;
+    color:white;
+    background-color: transparent;
+    font-family: "jost", sans-serif;;
 }
