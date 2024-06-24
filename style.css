@@ -20,7 +20,7 @@ body{
     color:white;
     cursor:pointer;
 }
-.transform-icon:hover{
+.scale-icon:hover{
     color: #E5BF4A;
     /* transform:scaleX(-1); */
     scale:1.5;
@@ -29,7 +29,7 @@ a{
     color:white;
 }
 .head-text img{
-    margin-left:55px;
+    margin-left:85px;
 }
 .call-btn{
     border:1px solid #E5BF4A;
@@ -73,7 +73,7 @@ a{
     cursor:pointer;
 }
 .bg-img{
-    background-image: url("https://preview.colorlib.com/theme/cakeshop/assets/img/hero/h1_hero1.jpg");
+    background-image: url("cake-images/h1_hero1.jpg.webp");
     width:100%;
     height:100vh;
     display:flex;
@@ -135,9 +135,8 @@ a{
 } */
 .burger-div p{
     font-size:16px;
-    /* font-family: "Jost", sans-serif; */
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 100;
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
     line-height:20px;
 }
 .burger-div{
@@ -154,7 +153,6 @@ a{
     display:flex;
     gap:20px;
     position:relative;
-    /* margin: 0px 50px; */
     :hover{
         .add-to-cart-btn{
             visibility:visible;
@@ -210,7 +208,7 @@ a{
     left:0px;
     height:40px;
     width:323px;
-    font-family:cursive;
+    font-family:"jost", sans-serif;
     background-color:#E5BF4A;
     border:none;
     font-weight:600;
@@ -462,7 +460,10 @@ a{
     display: flex;
     justify-content:center ;
     font-size:14px;
-    span{
+    span, a{
         color:#E5BF4A;
     }
+}
+.no-underline{
+    text-decoration: none;
 }
