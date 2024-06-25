@@ -469,7 +469,7 @@ a{
     text-decoration: none;
 }
 /* Media Query */
-@media all and (max-width:768px)
+@media only screen and (max-width:768px)
 {
     .head-text img{
         margin-left:47px;
@@ -494,5 +494,194 @@ a{
         font-size:28px;
         margin-left:24px;
     }
-    /*order btn*/
+    .order-btn{
+        padding:11px;
+        height:39px;
+        width:84px;
+        font-size:8px;
+    }
+    .burger-title{
+        width:370px;
+        font-size:28px;
+    }
+    .detail-grid{
+        grid-template-columns: auto;
+        color:white;
+        gap:11px;
+        margin:11px 33px;
+    }
+    .more-info{
+        font-size:14px;
+    }
+    .burger-div p{
+        font-size:9px;
+        line-height:11px;
+    }
+    .burger-div{
+        margin:0px 39px;
+    }
+    .burger-cake{
+        padding:13px;
+    }
+    #carousel-section{
+        margin:44px 28px;
+    }
+    .carousel{
+        flex-direction: column;
+        gap:11px;
+    }
+    .cake-image{
+        height:80%;
+        width:90%;
+        cursor:pointer;
+    }
+    .slide-btn{
+        display: none;
+    }
+    .cake-name{
+        font-size:17px;
+    }
+    .cake-price{
+        margin-top:4px;
+    }
+    .add-to-cart-btn{
+        bottom:43px;
+        height:22px;
+        width:180px;
+    }
+    #iframe-section{
+        margin:50px;
+    }
+    .iframe-div{
+        padding:2px;
+    }
+    #play-btn{
+        height:36px;
+        width:36px;
+        font-size: 22px;
+    }
+    #review-section{
+        margin-bottom:50px;
+    }
+    .review-heading{
+        font-size:28px;
+    }
+    .review-div{
+        flex-direction: column;
+        margin:5px 56px;
+    }
+    .reviews{
+        padding:22px;
+        border:1px solid white;
+    }
+    .review-para{
+        margin-top:11px;
+        font-size:14px;
+        line-height: 22px;
+    }
+    .profile{
+        margin-top:11px;
+        font-size: 9px;
+    }
+    .profile-img{
+        border-radius: 50%;
+        height:28px;
+        width:28px;
+        margin-right:5px;
+    }
+    .blog-header{
+        margin:16px 44px;
+    }
+    .big-font{
+        font-size:9px;
+        width:84px;
+        height:33px;
+    }
+    .blog-div{
+        flex-direction: column;
+        gap:8px;
+    }
+    .blog-1{
+        flex-direction: column;
+    }
+    .blog-txt{
+        padding:14px;
+    }
+    .blog-para{
+        font-size:13px;
+        margin-bottom:11px;
+    }
+    .blog-detail{
+        font-size:9px;
+        margin-bottom:28px;
+    }
+    .learn-more-btn{
+        font-size:8px;
+        margin-bottom:11px;
+    }
+    .learn-more-btn:hover{
+        letter-spacing: 2px;
+    }
+    .head-and-btn{
+        margin:44px;
+    }
+    .head-and-btn h1{
+        font-size:22px;
+    }
+    #fllw-insta{
+        font-size:8px;
+        padding:5px;
+        width:84px;
+        height:28px;
+    }
+    #fllw-insta:hover{
+        scale:1.1;
+    }
+    .insta-grid{
+        flex-direction: column;
+        align-content:center;
+        gap:11px;
+    }
+    .last-header{
+        flex-direction: column;
+        align-content: center;
+        margin:67px;
+        margin-bottom:11px;
+    }
+    .contact-div{
+        flex-direction: column;
+        margin:16px 56px;
+        padding-top:22px;
+        p{
+            font-size:8px;
+        }
+    }
+    .social-media-btns{
+        width:56px;
+        height:22px;
+        padding:5px;
+    }
+    .contact-txt{
+        width:700px;
+        margin-right:22px;
+    }
+    .subtitle{
+        font-family: "jost", sans-serif;
+        font-weight: lighter;
+        font-size: 106px;
+    }
+    .box-padding{
+        padding-right:50px;
+        width:224px;
+    }
+    .contact-para{
+        margin-bottom: 28px;
+    }
+    .bigger-icon{
+        font-size:11px;
+    }
+    .bottomline{
+        margin: 16px auto 11px auto;
+        font-size:8px;
+    }    
 } 
