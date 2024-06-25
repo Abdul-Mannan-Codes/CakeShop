@@ -34,7 +34,8 @@ a{
 .call-btn{
     border:1px solid #E5BF4A;
     padding:10px;
-    height:40px;
+    height:fit-content;
+    width:fit-content;
     background-color: transparent;
     color:#E5BF4A;
     font-size:15px;
@@ -467,3 +468,31 @@ a{
 .no-underline{
     text-decoration: none;
 }
+/* Media Query */
+@media all and (max-width:768px)
+{
+    .head-text img{
+        margin-left:47px;
+    }
+    .call-btn{
+        padding:5px;
+        font-size:8px;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    .nav-items{
+        margin:0px 11px;
+        text-decoration: none;
+    }
+    .bg-img{
+        /* width:760px; */
+        height:100vh;
+        background-size: cover;
+    }
+    .hero-text{
+        font-size:28px;
+        margin-left:24px;
+    }
+    /*order btn*/
+} 
