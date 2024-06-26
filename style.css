@@ -70,7 +70,7 @@ a{
     text-decoration: none;
 }
 .nav-items:hover{
-    color:gold;
+    color:#E5BF4A;
     cursor:pointer;
 }
 .bg-img{
@@ -82,6 +82,7 @@ a{
     margin-bottom:100px;
     background-size:cover;
     background-repeat: no-repeat;
+    background-position:center;
 }
 .hero-text{
     display:flex;
@@ -318,7 +319,7 @@ a{
 .blog-1{
     display:flex;
 }
-.blog-1-img, .blog-2-img{
+.blog-1-img{
     width:50%;
 }
 .blog-txt{
@@ -471,217 +472,85 @@ a{
 /* Media Query */
 @media only screen and (max-width:768px)
 {
-    .head-text img{
-        margin-left:47px;
-    }
-    .call-btn{
-        padding:5px;
-        font-size:8px;
-    }
-    .nav-list{
-        flex-direction: column;
-    }
-    .nav-items{
-        margin:0px 11px;
-        text-decoration: none;
+    body{
+        overflow-x: hidden; 
     }
     .bg-img{
-        /* width:760px; */
-        height:100vh;
-        background-size: cover;
+        width:840px;
     }
-    .hero-text{
-        font-size:28px;
-        margin-left:24px;
-    }
-    .order-btn{
-        padding:11px;
-        height:39px;
-        width:84px;
-        font-size:8px;
-    }
-    .burger-title{
-        width:370px;
-        font-size:28px;
+    .head-text img, .call-btn, .icons{
+        margin-left:70px;
     }
     .detail-grid{
         grid-template-columns: auto;
-        color:white;
-        gap:11px;
-        margin:11px 33px;
+        width:100%;
     }
-    .more-info{
-        font-size:14px;
+    #prev, #next{
+        display:none;
     }
-    .burger-div p{
-        font-size:9px;
-        line-height:11px;
-    }
-    .burger-div{
-        margin:0px 39px;
-    }
-    .burger-cake{
-        padding:13px;
-    }
-    #carousel-section{
-        margin:44px 28px;
-    }
-    .carousel{
+    .review-div, .blog-div, .blog-1, .carousel, .nav-list, .head, .contact-div, .last-header, .insta-grid, #iframe-section, .item-1, .item-2, .item-3{
         flex-direction: column;
-        gap:11px;
-    }
-    .cake-image{
-        height:80%;
-        width:90%;
-        cursor:pointer;
-    }
-    .slide-btn{
-        display: none;
-    }
-    .cake-name{
-        font-size:17px;
-    }
-    .cake-price{
-        margin-top:4px;
+        width:760px;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        margin:auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top:20px;
     }
     .add-to-cart-btn{
-        bottom:43px;
-        height:22px;
-        width:180px;
-    }
-    #iframe-section{
-        margin:50px;
-    }
-    .iframe-div{
-        padding:2px;
-    }
-    #play-btn{
-        height:36px;
-        width:36px;
-        font-size: 22px;
-    }
-    #review-section{
-        margin-bottom:50px;
-    }
-    .review-heading{
-        font-size:28px;
-    }
-    .review-div{
-        flex-direction: column;
-        margin:5px 56px;
-    }
-    .reviews{
-        padding:22px;
-        border:1px solid white;
-    }
-    .review-para{
-        margin-top:11px;
-        font-size:14px;
-        line-height: 22px;
-    }
-    .profile{
-        margin-top:11px;
-        font-size: 9px;
-    }
-    .profile-img{
-        border-radius: 50%;
-        height:28px;
-        width:28px;
-        margin-right:5px;
-    }
-    .blog-header{
-        margin:16px 44px;
-    }
-    .big-font{
-        font-size:9px;
-        width:84px;
-        height:33px;
-    }
-    .blog-div{
-        flex-direction: column;
-        gap:8px;
-    }
-    .blog-1{
-        flex-direction: column;
-    }
-    .blog-txt{
-        padding:14px;
-    }
-    .blog-para{
-        font-size:13px;
-        margin-bottom:11px;
-    }
-    .blog-detail{
-        font-size:9px;
-        margin-bottom:28px;
-    }
-    .learn-more-btn{
-        font-size:8px;
-        margin-bottom:11px;
-    }
-    .learn-more-btn:hover{
-        letter-spacing: 2px;
-    }
-    .head-and-btn{
-        margin:44px;
-    }
-    .head-and-btn h1{
-        font-size:22px;
-    }
-    #fllw-insta{
-        font-size:8px;
-        padding:5px;
-        width:84px;
-        height:28px;
-    }
-    #fllw-insta:hover{
-        scale:1.1;
-    }
-    .insta-grid{
-        flex-direction: column;
-        align-content:center;
-        gap:11px;
-    }
-    .last-header{
-        flex-direction: column;
-        align-content: center;
-        margin:67px;
-        margin-bottom:11px;
-    }
-    .contact-div{
-        flex-direction: column;
-        margin:16px 56px;
-        padding-top:22px;
-        p{
-            font-size:8px;
-        }
-    }
-    .social-media-btns{
-        width:56px;
-        height:22px;
-        padding:5px;
-    }
-    .contact-txt{
-        width:700px;
-        margin-right:22px;
-    }
-    .subtitle{
-        font-family: "jost", sans-serif;
-        font-weight: lighter;
-        font-size: 106px;
-    }
-    .box-padding{
-        padding-right:50px;
-        width:224px;
-    }
-    .contact-para{
-        margin-bottom: 28px;
-    }
-    .bigger-icon{
-        font-size:11px;
+        bottom:107px;
+        width:685px;
     }
     .bottomline{
-        margin: 16px auto 11px auto;
-        font-size:8px;
-    }    
+        text-align: center;
+        justify-content: center;
+        text-align:center;
+        margin:auto;
+    }
+    .contact-txt, .box-padding{
+        margin:auto;
+        flex-wrap: wrap;
+        width:760px;
+    }
+    .location{
+        margin-top:20px;
+    }
+    .insta-img{
+        width:100%;
+        image-orientation: flip;
+    }
+    .blog-header{
+        width:768px;
+        margin:auto;
+    }
+    .blog-txt{
+        border-top:none;
+        width:100%;
+        p{
+            font-size: 30px;
+        }
+    }
+    .blog-1-img{
+        width:100%;
+    }
+    .detail-grid{
+        border:none;
+    }
+    .burger-details{
+        border-top:1px solid #E5BF4A;
+        p{
+            font-size:30px;
+            line-height: 30px;
+        }
+        h3{
+            font-size:35px;
+            text-align: center;
+        }
+        .head-and-btn{
+            border:1px solid red;
+        }
+    }
 } 
