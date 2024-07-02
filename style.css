@@ -50,6 +50,23 @@ a{
     top:-1px;
     /* border:1px solid white; */
 }
+#toggle-mode{
+    position: absolute;
+    right:0px;
+    top:0px;
+    border-radius: 50%;
+    height:6vh;
+    width:6vh;
+    background-color: transparent;
+    color:#E5BF4A;
+    border:1px solid #E5BF4A;
+    cursor:pointer;
+}
+#toggle-mode:hover{
+    background-color: #E5BF4A;
+    color:black;
+    border:1px solid transparent;
+}
 .nav-list{
     display:flex;
     color:white;
