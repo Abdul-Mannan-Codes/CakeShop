@@ -1,11 +1,7 @@
 let defaultMode = "dark";
-let h1 = querySelectorAll('h1');
-let h2 = querySelectorAll('h2');
-let h3 = querySelectorAll('h3');
-let h4 = querySelectorAll('h4');
-let h5 = querySelectorAll('h5');
-let h6 = querySelectorAll('h6');
-let p = querySelectorAll('p');
+let heroCaption = document.querySelectorAll('.hero-text');
+let color = document.querySelector(':root');
+let orderBtn = document.querySelector('.order-btn');
 function changeTextColor(tag, color){
     tag.style.color = color;
 }
@@ -14,32 +10,22 @@ function toggleMode(){
     if(defaultMode == "dark"){
         btn.innerHTML = "<i class=\"fa-solid fa-moon\"></i>";
         defaultMode="light";
-        document.body.style.backgroundColor = "#f7f7f7";
-        for(h of h1){
-            changeTextColor(h,"#070707");
-        }
-        for(h of h2){
-            changeTextColor(h,"#070707");
-        }
-        for(h of h3){
-            changeTextColor(h,"#070707");
-        }
-        for(h of h4){
-            changeTextColor(h,"#070707");
-        }
-        for(h of h5){
-            changeTextColor(h,"#070707");
-        }
-        for(h of h6){
-            changeTextColor(h,"#070707");
-        }
-        for(para of p){
-            changeTextColor(para,"#AA6B39");
-        }
+        color.style.setProperty('--dark','#f7f7f7');
+        color.style.setProperty('--light','#e5bf4a');
+        color.style.setProperty('--golden','#070707');
+        heroCaption[0].style.color = "white";
+        orderBtn.style.border = "1px solid var(--dark)";
     }
     else{
         btn.innerHTML = "<i class=\"fa-solid fa-sun\"></i>";
         defaultMode = "dark";
-        document.body.style.backgroundColor = "#070707";
+        color.style.setProperty('--dark','#070707');
+        color.style.setProperty('--light','#f7f7f7');
+        color.style.setProperty('--golden','#e5bf4a');
+        orderBtn.style.border = "1px solid var(--golden)";
     }
 }
+/*  white->gold
+    gold->black
+    black->white
+} */

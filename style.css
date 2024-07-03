@@ -1,13 +1,18 @@
+:root{
+    --dark:#070707;
+    --golden:#e5bf4a;
+    --light:#f7f7f7;
+}
 body{
-    background-color: #070707;
-    color:#E5BF4A;
+    background-color: var(--dark);
+    color:var(--golden);
     font-family: "Poiret One", sans-serif;
 }
 .head{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    /* border:1px solid white; */
+    /* border:1px solid var(--light); */
     padding:20px;
 }
 .icons{
@@ -17,66 +22,69 @@ body{
     justify-content: space-between;
     /* border:1px solid yellow; */
     width:100px;
-    color:white;
+    color:var(--light);
     cursor:pointer;
 }
 .scale-icon:hover{
-    color: #E5BF4A;
+    color: var(--golden);
     scale:1.5;
 }
 a{
-    color:white;
+    color:var(--light);
 }
 .head-text img{
     margin-left:85px;
 }
 .call-btn{
-    border:1px solid #E5BF4A;
+    border:1px solid var(--golden);
     padding:10px;
     height:fit-content;
     width:fit-content;
     background-color: transparent;
-    color:#E5BF4A;
+    color:var(--golden);
     font-size:15px;
     font-weight: bold;
 }
 .call-btn:hover{
-    background-color: #E5BF4A;
-    color:#070707;
+    background-color: var(--golden);
+    color:var(--dark);
     cursor:pointer;
 }
 .nav{
-    position: relative;
-    top:-1px;
-    /* border:1px solid white; */
+    position: sticky;
+    top:0px;
 }
 #toggle-mode{
     position: absolute;
     right:0px;
-    top:0px;
+    top:-17px;
     border-radius: 50%;
-    height:6vh;
-    width:6vh;
+    height:5vh;
+    width:5vh;
     background-color: transparent;
-    color:#E5BF4A;
-    border:1px solid #E5BF4A;
+    color:var(--golden);
+    border:1px solid var(--golden);
     cursor:pointer;
 }
 #toggle-mode:hover{
-    background-color: #E5BF4A;
-    color:black;
+    background-color: var(--golden);
+    color:var(--dark);
     border:1px solid transparent;
+}
+.nav{
+   position: sticky;
+   top:0px;
 }
 .nav-list{
     display:flex;
-    color:white;
+    color:var(--light);
     list-style-type: none;
     justify-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: relative;
 }
 .nav-items a:hover{
-    color:#E5BF4A;
+    color:var(--golden);
     text-decoration: underline;
 }
 .nav-items a{
@@ -87,7 +95,7 @@ a{
     text-decoration: none;
 }
 .nav-items:hover{
-    color:#E5BF4A;
+    color:var(--golden);
     cursor:pointer;
 }
 #menu-btn{
@@ -95,7 +103,7 @@ a{
     width:max-content;
     height:100px;
     background-color: transparent;
-    color:black;
+    color:var(--dark);
     border:1px solid #000;
     border-radius: 1rem;
     font-family: "jost", sans-serif;
@@ -121,11 +129,11 @@ a{
     display:flex;
     flex-direction: column;
     justify-content:center;
-    /* border:1px solid #E5BF4A; */
+    /* border:1px solid var(--golden); */
     font-size:50px;
     margin-left:80px;
     height:auto;
-    color:white;
+    color:var(--light);
 }
 .order-btn{
     border:none;
@@ -133,14 +141,15 @@ a{
     height:70px;
     width:150px;
     font-size:13px;
-    background-color: #E5BF4A;
+    background-color: var(--golden);
+    color:var(--light);
     letter-spacing: 2px;
     font-family: "Jost", sans-serif;
 }
 .order-btn:hover{
-    background-color: transparent;
-    color:#E5BF4A;
-    border:1px solid #E5BF4A;
+    background-color: var(--dark);
+    color:var(--golden);
+    border:1px solid var(--golden);
     cursor:pointer;
 }
 .burger-title{
@@ -148,23 +157,23 @@ a{
     width:660px;
     font-size:50px;
     margin:auto;
-    color:white;
+    color:var(--light);
 }
 .detail-grid{
     display:grid;
     grid-template-columns: auto auto;
-    border-top:1px solid #E5BF4A;
-    color:white;
+    border-top:1px solid var(--golden);
+    color:var(--light);
     gap:20px;
     margin:20px 60px;
 }
 .more-info{
     font-weight:normal;
     font-size:25px;
-    color:#E5BF4A;
+    color:var(--golden);
 }
 /* .grid-items{
-    border-top:1px solid #E5BF4A;
+    border-top:1px solid var(--golden);
     border-width: 50%;
 } */
 .burger-div p{
@@ -177,7 +186,7 @@ a{
     margin:0px 70px;
 }
 .burger-cake{
-    /* border:1px solid white; */
+    /* border:1px solid var(--light); */
     padding:23px;
 }
 #carousel-section{
@@ -205,7 +214,7 @@ a{
 .slide-btn{
     border:none;
     font-size:15px;
-    color:#E5BF4A;
+    color:var(--golden);
     background-color: transparent;
     cursor:pointer;
     opacity:70%;
@@ -221,7 +230,7 @@ a{
 .cake-name{
     font-weight: lighter;
     font-size:30px;
-    color:white;
+    color:var(--light);
     margin-bottom:0px;
 }
 .cake-price{
@@ -243,7 +252,8 @@ a{
     height:40px;
     width:323px;
     font-family:"jost", sans-serif;
-    background-color:#E5BF4A;
+    background-color:var(--golden);
+    color:var(--light);
     border:none;
     font-weight:600;
     visibility: hidden;
@@ -259,7 +269,7 @@ a{
     top:43%;
     right:45%;
     border-radius:50%;
-    border:1px solid #E5BF4A;
+    border:1px solid var(--golden);
     padding:2px;
 }
 #play-btn{
@@ -273,11 +283,12 @@ a{
     font-size: 40px;
     text-align: center;
     padding:auto;
-    background-color:#E5BF4A;
+    background-color:var(--golden);
+    color:var(--dark);
 }
 #play-btn:hover{
     cursor:pointer;
-    background-color: #fff;
+    background-color: var(--light);
 }
 #review-section{
     align-content: center;
@@ -285,14 +296,14 @@ a{
 }
 .review-heading{
     font-size:50px;
-    color:white;
+    color:var(--light);
     text-align:center;
     /* margin:auto; */
 }
 .review-div{
     display:flex;
     margin:10px 100px;
-    border:1px solid white;
+    border:1px solid var(--light);
     border-left:none;
     border-right:none;
 }
@@ -301,11 +312,11 @@ a{
     /* border:1px solid #fff; */
 }
 .rating-stars{
-    color:#E5BF4A;
+    color:var(--golden);
 }
 .review-para{
     margin-top:20px;
-    color:white;
+    color:var(--light);
     font-size:25px;
     font-family: "jost", sans-serif;
     line-height: 40px;
@@ -314,14 +325,14 @@ a{
    border:1px solid #fff;
 } */
 .review-2{
-    border:1px solid #fff;
+    border:1px solid var(--light);
 }
 /* .review-3{
     border:1px solid #fff;
 } */
 .profile{
     display:flex;
-    color:white;
+    color:var(--light);
     margin-top:20px;
     font-size: 17px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -346,7 +357,7 @@ a{
 .blog-div{
     display:flex;
     gap:15px;
-    /* border:1px solid white; */
+    /* border:1px solid var(--light); */
 }
 .blog-1{
     display:flex;
@@ -367,7 +378,7 @@ a{
 }
 .blog-detail{
     font-size:16px;
-    color:white;
+    color:var(--light);
     font-family:"jost", sans-serif;
     font-weight:300;
     margin-top:0px;
@@ -376,9 +387,9 @@ a{
 .learn-more-btn{
     text-transform: uppercase;
     border:none;
-    border-bottom:1px solid #E5BF4A;
+    border-bottom:1px solid var(--golden);
     background-color: transparent;
-    color:#E5BF4A;
+    color:var(--golden);
     font-family:"jost", sans-serif;
     cursor:pointer;
     font-size:15px;
@@ -397,22 +408,22 @@ a{
 }
 .head-and-btn h1{
     font-size:40px;
-    color:white;
+    color:var(--light);
     font-weight:normal;
     text-align: center;
 }
 #fllw-insta{
     background-color: transparent;
-    color:#E5BF4A;
+    color:var(--golden);
     font-family:"jost", sans-serif;
     font-size:15px;
     padding:10px;
-    border:1px solid #E5BF4A;
+    border:1px solid var(--golden);
     width:150px;
     height:50px;
 }
 #fllw-insta:hover{
-    /* background-color: #E5BF4A; */
+    /* background-color: var(--golden); */
     color:#ffd042;
     cursor: pointer;
     scale:1.2;
@@ -432,7 +443,7 @@ a{
     margin-bottom:20px;
 }
 .low-opacity-hr{
-    color:white;
+    color:var(--light);
     opacity:60%;
     width:85%;
 }
@@ -440,7 +451,7 @@ a{
     display:flex;
     margin:30px 100px;
     padding-top:40px;
-    color:white;
+    color:var(--light);
     justify-content: space-evenly;
     p{
         font-size:16px;
@@ -451,16 +462,16 @@ a{
     width:100px;
     height:40px;
     padding:10px;
-    border:1px solid white;
-    color:white;
+    border:1px solid var(--light);
+    color:var(--light);
     background-color: transparent;
     font-family: "jost", sans-serif;
 }
 .social-media-btns:hover{
-    color:#E5BF4A;
+    color:var(--golden);
     scale:0.9;
     cursor:pointer;
-    border-color:#E5BF4A;
+    border-color:var(--golden);
 }
 .contact-txt{
     width:1250px;
@@ -468,7 +479,7 @@ a{
     /* border:1px solid #fff; */
 }
 .yellow-txt{
-    color:#E5BF4A;
+    color:var(--golden);
     font-weight: 400;
 }
 .subtitle{
@@ -488,14 +499,14 @@ a{
     font-size:20px;
 }
 .bottomline{
-    color:white;
+    color:var(--light);
     font-family: "jost", sans-serif;
     margin: 30px auto 20px auto;
     display: flex;
     justify-content:center ;
     font-size:14px;
     span, a{
-        color:#E5BF4A;
+        color:var(--golden);
     }
 }
 .sm-bottomline{
@@ -530,7 +541,7 @@ a{
         width:1000px;
         height: 100px;
         padding:0px;
-        background-color: #E5BF4A;
+        background-color: var(--golden);
     }
     #menu-btn{
         display:block;        
@@ -539,6 +550,14 @@ a{
         font-size: 30px;
         justify-content: center;
         width:1000px;
+     }
+     #toggle-mode{
+        position: absolute;
+        left:0px;
+        top:-3px;
+        height:8vh;
+        width:8vh;
+        font-size:20px;
      }
     .icons{
         display: none;
@@ -554,7 +573,7 @@ a{
         margin-left:150px;
     }
     .burger-details{
-        border-top:1px solid #E5BF4A;
+        border-top:1px solid var(--golden);
         p{
             font-size:40px;
             line-height: 50px;
@@ -588,8 +607,8 @@ a{
         margin-left:50px;
     }
     #carousel-section{
-        border-top:1px solid #E5BF4A;
-        border-bottom: 1px solid #E5BF4A;
+        border-top:1px solid var(--golden);
+        border-bottom: 1px solid var(--golden);
         width:1000px;
     }
     .cake-price{
@@ -625,14 +644,17 @@ a{
     }
     .review-2, .review-1, .review-3{
         border:none;
-        border-top:1px solid #E5BF4A;
-        border-bottom:1px solid #E5BF4A;
+        border-top:1px solid var(--golden);
+        border-bottom:1px solid var(--golden);
         width:1000px;
         padding-left:200px;
     }
     .add-to-cart-btn{
         bottom:250px;
         width:900px;
+        height:100px;
+        font-size:50px;
+        color:var(--dark);
     }
     .contact-txt, .box-padding{
         margin:auto;
